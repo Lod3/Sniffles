@@ -17,10 +17,20 @@ angular.module('snuifDoosFrontendApp')
     };
 
     p.draw = function() {
-      p.background(102);
+      p.background(152);
       // Draw the shape
-      p.ellipse(200, 200, 100, 100);
+      // stroke(255, 77, 55);
+
+      //p.tint(255, 128); // applies to pictures, apparantly 
+      p.stroke(0, 153, 204, 126); // Stroke (R,G,B)
+      p.fill(150, 25, 177); // vul (R,G,B)
+      p.ellipse(250, 200, 100, 100);
+
+      //p.tint(255, 128);// applies to pictures, apparantly  
+      p.fill(450, 80, 150,128); // Stroke (R,G,B,transparancy)
       p.ellipse(250, 250, 100, 100);
+
+      // p.tint(255, 128); // applies to pictures, apparantly  
       p.ellipse(400, 200, 150, 150);
 
     };
